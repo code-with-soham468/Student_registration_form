@@ -1,0 +1,198 @@
+/* style reset of Webpage */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style body */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100vw;
+    height: auto;
+    background: url(background.jpg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    overflow-x: hidden;
+    padding: 40px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+/* For add background blur fillter of body */
+body::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 160vh;
+    content: "";
+    backdrop-filter: blur(4px);
+    z-index: -1;
+}
+
+/* styling container  */
+.hero {
+    width: 40%;
+    height:100% ;
+    background: linear-gradient(135deg, #6cb8ff, #ffffff);
+    border-radius: 25px;
+    box-shadow: 0 0 15px 10px rgb(248, 122, 240);
+    /* max-width: 600px; */
+    line-height: 2.2;
+    padding: 30px;
+
+}
+
+/* Styling header of container */
+header {
+    border-bottom: 2px solid rgb(66, 163, 237);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/* Styling h1 of header */
+header h1 {
+    color: #333;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* Style From */
+form {
+    flex-direction: column;
+}
+
+/* Styling lable */
+label {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+input , select{
+    background:white;
+    color: #000000;
+    box-shadow: inset 5px 5px 5px #cbced1, inset -5px -5px 5px #ffffff;
+    
+    outline: none;
+}
+
+/* Style box */
+.box {
+    border: none;
+    color: #8b8b8b;
+    font-weight: bold;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 13px;
+    margin-bottom: 15px;
+    padding: 10px 30px;
+    width: 100%;
+}
+
+.pic::-webkit-file-upload-button{
+    background: rgb(211, 232, 255);
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+/* Styling redio button */
+.radio {
+    margin-right: 5px;
+    margin-bottom: 20px;
+    height: 20px;
+    width: 20px;
+    border: none;
+}
+
+.radio:checked{
+    box-shadow: none;
+
+}
+
+/* Styling All Check boxes */
+.checkbox {
+    float: left;
+    margin-top: 4px;
+    margin-right: 4px;
+    height: 20px;
+    width: 20px;
+    background-color: #ecf0f3;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 3px 3px 3px #cbced1, inset -3px -3px 3px #ffffff;
+}
+
+.checkbox:checked{
+    box-shadow: -4px -4px 4px #feffff, 4px 4px 4px #161b1d2f;
+}
+/* Styling for submit button */
+.submit {
+    height: 50px;
+    width:100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: oblique;
+    margin-bottom: 25px;
+    background-color: chartreuse;
+    box-shadow: 0 0 15px 1px rgb(247, 136, 67);
+    border: none;
+    border-radius: 4px;
+    color: black;
+    cursor: pointer;
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+/* Add effect for submit button */
+.submit:active {
+    background-color: cyan;
+    box-shadow: 0 0 12px 8px rgb(217, 246, 54);
+}
+
+/* Styling reset button */
+.reset {
+    background-color: #ff5555;
+    box-shadow: 5px 5px 6px #0d275023, -5px -5px 6px #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    height: 40PX;
+    width: 20%;
+    font-size: 15px;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    float: right;
+    margin-top: 10px;
+}
+
+/* Add hover effect for reset button */
+.reset:hover {
+    background-color: rgb(67, 246, 243);
+    box-shadow: 0 0 12px rgb(255, 0, 0);
+}
+
+/* Add media quary for responsiveness */
+/* @media only screen and (min-width: 500px) {
+    .hero {
+        height: 100%;
+        
+    }
+} */
